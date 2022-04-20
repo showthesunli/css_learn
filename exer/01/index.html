@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东的图片列表</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+        body {
+            background-color: #bfa;
+        }
+
+        .outer {
+            width: 190px;
+            background-color: #ffffff;
+            margin: 50px auto;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        img:nth-child(n+1){
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <img src="./img/1.jpg"/>
+        <img src="./img/2.jpg"/>
+        <img src="./img/3.jpg"/>
+    </div>
+    
+</body>
+</html>
