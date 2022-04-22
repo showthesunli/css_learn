@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        ul{
+            width: 590px;
+            height: 470px;
+            position: relative;
+
+            margin: 100px auto;
+        }
+
+        ul li{
+            position: absolute;
+        }
+
+        ul>li:nth-child(0){
+            z-index: 9999;
+        }
+
+        .pointer{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .pointer a{
+            display: inline-block;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, .3);
+            border: 2px rgb(255, 255, 255);
+        }
+
+        .pointer a:active,
+        .pointer a:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#"><img src="./img/1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/4.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/5.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/6.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/7.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/8.jpg" alt=""></a></li>
+
+        <div class="pointer">
+            <a href="javascript:voide(0);"></a>
+            <a href="javascript:voide(0);"></a>
+            <a href="javascript:voide(0);"></a>
+            <a href="javascript:voide(0);"></a>
+            <a href="javascript:voide(0);"></a>
+            <a href="javascript:voide(0);"></a>
+            <a href="javascript:voide(0);"></a>
+            <a href="javascript:voide(0);"></a>
+        </div>
+    </ul>
+    
+</body>
+</html>
