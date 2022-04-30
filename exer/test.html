@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <style>
-      .box0 {
-        
-        border: black solid 10px;
-        width: 200px;
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    ul{
+      width: 800px;
+      border: 10px solid red;
+      font-size: 50px;
+      text-align: center;
+      line-height: 100px;
+      display: flex;
+    }
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
+    li{
+      width: 100px;
+      height: 100px;
+      background-color: #bfa;
+    }
 
-      .box0 div{
-        width: 100px;
-        flex-grow: 1;
-        font-size: 100px;
-        text-align: center;
-      }
-
-      .box1 {
-        background-color: red;
-      }
-
-      .box2 {
-        background-color: green;
-      }
-      .box3 {
-        background-color: #bfa;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="box0">
-      <div class="box1">1</div>
-      <div class="box2">2</div>
-      <div class="box3">3</div>
-    </div>
-  </body>
+    li:nth-child(2){
+      background-color: bisque;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+  
+</body>
 </html>
