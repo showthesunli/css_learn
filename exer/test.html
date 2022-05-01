@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <style>
     ul{
-      width: 800px;
+      width: 600px;
       border: 10px solid red;
       font-size: 50px;
       text-align: center;
@@ -22,8 +22,17 @@
       background-color: #bfa;
     }
 
+    li:nth-child(1){
+      flex-grow: 1;
+    }
+
     li:nth-child(2){
       background-color: bisque;
+      flex-grow: 2;
+    }
+
+    li:nth-child(3){
+      flex-grow: 3;
     }
   </style>
 </head>
@@ -33,6 +42,6 @@
     <li>2</li>
     <li>3</li>
   </ul>
-  
+  aaa
 </body>
 </html>

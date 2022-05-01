@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3School 导航条，使用flex重做</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+        ul{
+            width: 1210px;
+            font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC", Verdana, Arial, '微软雅黑','宋体' ;
+            background-color: rgb(232, 231, 227);
+            
+            margin: 100px auto;
+            display: flex;
+        }
+
+        ul li{
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            flex-grow: 1;
+            
+        }
+
+        ul li:hover{
+            background-color: #3f3f3f;
+            
+        }
+
+        ul li:hover a{
+            color: white;
+        }
+
+        ul li a{
+            color:#777777;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">HTML/CSS</a></li>
+      <li><a href="#">Browser Side</a></li>
+      <li><a href="#">Server Side</a></li>
+      <li><a href="#">Programming</a></li>
+      <li><a href="#">XML</a></li>
+      <li><a href="#">Web Building</a></li>
+      <li><a href="#">Reference</a></li>
+    </ul>
+  </body>
+</html>
