@@ -1,73 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>淘宝导航图片列表</title>
-  <link rel="stylesheet" href="../css/reset.css">
-  <style>
-    body{
-      background-color: #f4f4f4;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>淘宝导航图片列表</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+      @media screen and (min-width: 375px) {
+        html {
+          font-size: 14px;
+        }
+      }
 
-    .img-nav{
-      width: auto;
-      background-color: #fff;
-      border-radius: 20px;
-      margin: 0 10px;
-    }
+      @media screen and (min-width: 768px) {
+        html {
+          font-size: 20px;
+        }
+      }
 
-    .img-nav-item-group{
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-    }
+      @media screen and (min-width: 1024px) {
+        html {
+          font-size: 28px;
+        }
+      }
 
-    .img-nav-item{
-      width: 18%;
-      
-      text-align: center;
-      font-size: 1.3rem;
-      line-height: 2rem;
-      
-    }
+      @media screen and (min-width: 1280px) {
+        html {
+          font-size: 36px;
+        }
+      }
 
-    .img-nav-item a{
-      text-decoration: none;
+      body {
+        background-color: #f4f4f4;
+      }
 
-      color: #666666;
-      
-      
+      .img-nav {
+        width: auto;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 0 10px;
+      }
 
-      /* display: flex;
+      .img-nav-item-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .img-nav-item {
+        width: 18%;
+
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+
+      .img-nav-item a {
+        text-decoration: none;
+
+        color: #666666;
+
+        /* display: flex;
       flex-direction: column;
       align-items: center; */
-    }
+      }
 
-    img{
-      width: 100%;
-    }
+      img {
+        width: 100%;
+      }
 
-    
-  </style>
-</head>
-<body>
-  <nav class="img-nav">
-    <div class="img-nav-item-group">
-      <div class="img-nav-item"><a href="#"><img src="./img/1.png" alt=""><span>天猫新品</span></a></div>
-      <div class="img-nav-item"><a href="#"><img src="./img/2.png" alt=""><span>今日爆款</span></a></div>
-      <div class="img-nav-item"><a href="#"><img src="./img/3.png" alt=""><span>天猫国际</span></a></div>
-      <div class="img-nav-item"><a href="#"><img src="./img/4.png" alt=""><span>飞猪旅行</span></a></div>
-      <div class="img-nav-item"><a href="#"><img src="./img/5.png" alt=""><span>天猫超市</span></a></div>
-    </div>
-    <div class="img-nav-item-group">
-      <div class="img-nav-item"><a href="#"><img src="./img/6.png" alt=""><span>淘宝吃货</span></a></div>
-      <div class="img-nav-item"><a href="#"><img src="./img/7.png" alt=""><span>省钱卡</span></a></div>
-      <div class="img-nav-item"><a href="#"><img src="./img/8.png" alt=""><span>领淘金币</span></a></div>
-      <div class="img-nav-item"><a href="#"><img src="./img/9.png" alt=""><span>阿里拍卖</span></a></div>
-      <div class="img-nav-item"><a href="#"><img src="./img/10.png" alt=""><span>分类</span></a></div>
-    </div>
-  </nav>
-</body>
+      span{
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="img-nav">
+      <div class="img-nav-item-group">
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/1.png" alt="" /><span>天猫新品</span></a>
+        </div>
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/2.png" alt="" /><span>今日爆款</span></a>
+        </div>
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/3.png" alt="" /><span>天猫国际</span></a>
+        </div>
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/4.png" alt="" /><span>飞猪旅行</span></a>
+        </div>
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/5.png" alt="" /><span>天猫超市</span></a>
+        </div>
+      </div>
+      <div class="img-nav-item-group">
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/6.png" alt="" /><span>淘宝吃货</span></a>
+        </div>
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/7.png" alt="" /><span>省钱卡</span></a>
+        </div>
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/8.png" alt="" /><span>领淘金币</span></a>
+        </div>
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/9.png" alt="" /><span>阿里拍卖</span></a>
+        </div>
+        <div class="img-nav-item">
+          <a href="#"><img src="./img/10.png" alt="" /><span>分类</span></a>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
