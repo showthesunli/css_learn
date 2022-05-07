@@ -17,6 +17,8 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family:'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .container {
@@ -31,6 +33,12 @@ section {
 
 h2 {
   margin-bottom: 48px;
+
+  /* / 20 / 24 / 30 / 36 / 44 / */
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.9px;
 }
 
 .grid-3-cols {
@@ -57,10 +65,20 @@ header {
 
 h1 {
   margin-bottom: 24px;
+
+  /*  30 / 36 / 44  */
+  /* title h1 标签的字体设置 */
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+  
 }
 
 .header-text {
   margin-bottom: 24px;
+  line-height: 1.5;
+  letter-spacing: -1px;
 }
 
 img {
@@ -76,6 +94,8 @@ img {
 }
 
 .features-text {
+  line-height: 1.4;
+  letter-spacing: -0.5px;
 }
 
 /* TESTIMONIAL */
