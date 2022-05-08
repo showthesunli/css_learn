@@ -99,7 +99,12 @@ img {
 }
 
 /* FEATURES */
-.features-icon {
+.feature-icon {
+  stroke: #5f3dc4;
+  width: 36px;
+  height: 36px;
+
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -159,11 +164,18 @@ h3 {
 
 .chair-details li {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 12px;
   margin-bottom: 12px;
 
   letter-spacing: 0.2px;
+}
+
+.chair-details span{
+  display: inline-block;
+  
+  font-size: 20px;
+  letter-spacing: -0.4px;
 }
 
 .chair-details li:last-child {
@@ -171,6 +183,9 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #5f3dc4;
+  width: 24px;
+  height: 24px;
 }
 
 .chair-price {
