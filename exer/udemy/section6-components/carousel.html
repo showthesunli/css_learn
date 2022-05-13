@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carousel-component</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+      .carousel {
+        font-family: 'Inter', sans-serif;
+        width: 800px;
+        background-color: #087a57;
+        color: #fff;
+        padding: 32px 48px 32px 84px;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        margin: 200px auto;
+
+        display: flex;
+        gap: 82px;
+
+        position: relative;
+      }
+      img {
+        height: 200px;
+        transform: scale(1.5);
+
+        border-radius: 10px;
+      }
+
+      .testmonial-text {
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #e6fcf5;
+      }
+      .testmonial-author {
+        font-size: 16px;
+        color: #c3fae8;
+      }
+      .testmonial-author-title {
+        font-size: 14px;
+        color: #c3fae8;
+      }
+
+      .btn {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+
+        cursor: pointer;
+      }
+
+      .btn-left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .btn-right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+      .arrow-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087a57;
+      }
+
+      .pointers {
+        display: flex;
+        gap: 10px;
+
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 32px);
+        bottom: 0;
+      }
+      .pointer-item {
+        
+        background-color: #fff;
+        border:2px solid #087a57;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        padding: 0;
+        cursor: pointer;
+
+      }
+
+      .pointer-item-activated{
+          background-color: #087a57;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="./maria.jpg" alt="maria" />
+      <blockquote class="testimonial">
+        <p class="testmonial-text">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse itaque
+          possimus, incidunt non ratione sapiente necessitatibus rerum
+          voluptatum doloremque suscipit quis molestias voluptates dolorum
+          reprehenderit obcaecati aperiam labore atque ducimus!"
+        </p>
+        <p class="testmonial-author">Maria de Almeida</p>
+        <p class="testmonial-author-title">
+          Senior Product Manager at EDP Comercial
+        </p>
+      </blockquote>
+      <button class="btn btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="arrow-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button class="btn btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="arrow-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+      <div class="pointers">
+        <button class="pointer-item pointer-item-activated">&nbsp;</button>
+        <button class="pointer-item">&nbsp;</button>
+        <button class="pointer-item">&nbsp;</button>
+        <button class="pointer-item">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
