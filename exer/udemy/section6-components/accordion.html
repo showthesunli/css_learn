@@ -23,6 +23,7 @@ FONT SIZE SYSTEM (px)
       body {
         font-family: "Inter", sans-serif;
         font-size: 18px;
+        font-weight: 400;
       }
 
       .accordion {
@@ -35,32 +36,35 @@ FONT SIZE SYSTEM (px)
       }
 
       .accordion-item {
-        box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
       }
 
       .item-grid {
         display: grid;
-        grid-template-columns: 30px 1fr 30px;
-        row-gap: 20px;
-        column-gap: 30px;
+        grid-template-columns: auto 1fr auto;
+        row-gap: 24px;
+        column-gap: 32px;
 
         align-items: center;
 
         padding: 24px;
       }
 
-      .item-description {
-        grid-column: 2/3;
-        grid-row: 2/3;
+      .hidden-box{
+          display: none;
+          grid-column: 2/span 1;
+          grid-row: 2/span 1;
+      }
 
+      .item-description {
         line-height: 1.5;
         font-size: 16px;
         letter-spacing: normal;
+        margin-bottom: 24px;
       }
 
       .item-list {
-        grid-column: 2 / span 1;
-        grid-row: 3 / span 1;
+        
 
         list-style-type: disc;
         list-style-position: inside;
@@ -68,10 +72,11 @@ FONT SIZE SYSTEM (px)
 
         font-size: 16px;
         color: #cccfd3;
-      }
 
-      .item-list li{
-          margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
       }
 
       .item-index {
@@ -91,6 +96,10 @@ FONT SIZE SYSTEM (px)
 
       .actived {
         border-top: 5px solid #087f5b;
+      }
+
+      .actived .hidden-box{
+          display: block;
       }
 
       .actived .item-index,
@@ -122,6 +131,22 @@ FONT SIZE SYSTEM (px)
               d="M19 9l-7 7-7-7"
             />
           </svg>
+          <div class="hidden-box">
+            <p class="item-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit ipsam tempore sed perspiciatis temporibus saepe
+              architecto? Vel illum beatae aliquam ratione mollitia, saepe est,
+              eveniet optio natus deserunt cumque explicabo?
+            </p>
+            <ul class="item-list">
+              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+              <li>
+                Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+              </li>
+              <li>Tempora, et atque officia at consequatur laborum!</li>
+              <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="accordion-item actived">
@@ -142,20 +167,22 @@ FONT SIZE SYSTEM (px)
               d="M19 9l-7 7-7-7"
             />
           </svg>
-          <p class="item-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Reprehenderit ipsam tempore sed perspiciatis temporibus saepe
-            architecto? Vel illum beatae aliquam ratione mollitia, saepe est,
-            eveniet optio natus deserunt cumque explicabo?
-          </p>
-          <ul class="item-list">
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-            <li>
-              Quasi accusamus corporis totam tempora suscipit ab obcaecati.
-            </li>
-            <li>Tempora, et atque officia at consequatur laborum!</li>
-            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
-          </ul>
+          <div class="hidden-box">
+            <p class="item-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit ipsam tempore sed perspiciatis temporibus saepe
+              architecto? Vel illum beatae aliquam ratione mollitia, saepe est,
+              eveniet optio natus deserunt cumque explicabo?
+            </p>
+            <ul class="item-list">
+              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+              <li>
+                Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+              </li>
+              <li>Tempora, et atque officia at consequatur laborum!</li>
+              <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="accordion-item">
@@ -176,6 +203,22 @@ FONT SIZE SYSTEM (px)
               d="M19 9l-7 7-7-7"
             />
           </svg>
+          <div class="hidden-box">
+            <p class="item-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit ipsam tempore sed perspiciatis temporibus saepe
+              architecto? Vel illum beatae aliquam ratione mollitia, saepe est,
+              eveniet optio natus deserunt cumque explicabo?
+            </p>
+            <ul class="item-list">
+              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+              <li>
+                Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+              </li>
+              <li>Tempora, et atque officia at consequatur laborum!</li>
+              <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
