@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 challenge pagnation</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .warper {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        margin-top: 200px;
+      }
+
+      .btn{
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          border-radius: 50%;
+          border: 1px solid #087f5b;
+          /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+      }
+      .arrow-icon {
+        width: 24px;
+        height: 24px;
+
+        stroke: #087f5b;
+      }
+
+      .btn:hover, .page-index:hover{
+          color: #fff;
+          background-color: #087f5b;
+      }
+      .btn:hover .arrow-icon{
+          stroke: #fff;
+      }
+
+      .page-index, .page-index:visited{
+          text-decoration: none;
+          font-size: 18px;
+          color: black;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+      }
+
+      .activated{
+          background-color: #087f5b;
+          color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warper">
+      <a href="#" class="btn btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="arrow-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </a>
+
+      <a href="#" class="page-index">1</a>
+      <a href="#" class="page-index">2</a>
+      <a href="#" class="page-index activated">3</a>
+      <a href="#" class="page-index">4</a>
+      <a href="#" class="page-index">5</a>
+      <a href="#" class="page-index">6</a>
+      <span>...</span>
+      <a href="#" class="page-index">23</a>
+      
+      <a href="#" class="btn btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="arrow-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </a>
+    </div>
+  </body>
+</html>
