@@ -24,6 +24,8 @@
       GREY COLOR: #343a40
       */
       body {
+        font-family: 'Inter', sans-serif;
+
         display: flex;
         justify-content: center;
       }
@@ -53,7 +55,9 @@
         stroke: #087f5b;
       }
 
-      .btn:hover, .page-index:hover{
+      .btn:hover,
+      .page-index:hover,
+      .page-index.activated{
           color: #fff;
           background-color: #087f5b;
       }
@@ -61,7 +65,8 @@
           stroke: #fff;
       }
 
-      .page-index, .page-index:visited{
+      .page-index,
+      .page-index:visited{
           text-decoration: none;
           font-size: 18px;
           color: black;
@@ -76,10 +81,7 @@
           border-radius: 50%;
       }
 
-      .activated{
-          background-color: #087f5b;
-          color: #fff;
-      }
+      
     </style>
   </head>
   <body>
