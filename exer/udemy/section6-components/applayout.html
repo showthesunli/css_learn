@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppLayout</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .warpper {
+        display: flex;
+      }
+
+      nav {
+        width: 80px;
+        background-color: #343a40;
+        height: 100vh;
+
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      nav > div {
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+      }
+
+      .content {
+        flex-grow: 1;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+      }
+
+      .content-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-row: 1/1 span;
+        grid-column: 1/-1;
+
+        padding-left: 24px;
+        padding-right: 24px;
+        background-color: #7048e8;
+      }
+
+      .action-normal {
+        display: flex;
+        gap: 12px;
+      }
+
+      .content-silder {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 40px;
+
+        overflow: scroll;
+        /* tmp for debug */
+        background-color: #e9ecef;
+      }
+
+      .email-account {
+        flex-shrink: 0;
+        box-sizing: border-box;
+        height: 96px;
+        background-color: #adb5bd;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .email-content {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        padding-top: 32px;
+      }
+      .add-info {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        padding-top: 32px;
+        background-color: #e9ecef;
+      }
+
+      .btn {
+        border: none;
+        padding: 4px 8px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        color: #fff;
+      }
+
+      .btn-normal {
+        background-color: #5f3dc4;
+      }
+
+      .btn-trash {
+        background-color: #d6336c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warpper">
+      <nav>
+        <div><span>Nav</span></div>
+      </nav>
+      <div class="content">
+        <div class="content-header">
+          <div class="action-normal">
+            <button class="btn btn-normal">New</button>
+            <button class="btn btn-normal">Reply</button>
+            <button class="btn btn-normal">Forward</button>
+            <button class="btn btn-normal">Mark unread</button>
+          </div>
+          <div class="action-trash">
+            <button class="btn btn-trash">Trush</button>
+          </div>
+        </div>
+        <div class="content-silder">
+          <div class="email-account">email1</div>
+          <div class="email-account">email2</div>
+          <div class="email-account">email3</div>
+          <div class="email-account">email4</div>
+          <div class="email-account">email5</div>
+          <div class="email-account">email6</div>
+          <div class="email-account">email7</div>
+          <div class="email-account">email8</div>
+          <div class="email-account">email9</div>
+          <div class="email-account">email10</div>
+        </div>
+        <div class="email-content">Email view</div>
+        <div class="add-info">Additional info</div>
+      </div>
+    </div>
+  </body>
+</html>
