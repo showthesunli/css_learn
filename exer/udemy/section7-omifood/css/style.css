@@ -5,14 +5,3 @@ html{
     /* font-size = 62.5%时，fonte-size的实际值为10px，方便计算。 */
     font-size: 62.5%;
 }
-
-.test{
-    background-color: red;
-    /* width: 1000px; */
-    /* max-width: 1000px; */
-    
-    max-width: 50rem;
-    font-size: 2rem;
-    padding: 4rem;
-    color: #fff;
-}
