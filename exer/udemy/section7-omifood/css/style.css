@@ -9,7 +9,7 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ html {
   /* chrome 默认font-size 是16px 16*0.625 = 10 */
   /* font-size = 62.5%时，fonte-size的实际值为10px，方便计算。 */
   font-size: 62.5%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #343a40;
 }
 
@@ -38,48 +38,45 @@ html {
   align-items: center;
 }
 
-.hero-title{
-    font-size: 5.2rem;
-    font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: -0.5px;
+.hero-title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
 
-    margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem;
 }
 
-.hero-description{
-    font-size: 2.0rem;
-    line-height: 1.5;
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
 
-    margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem;
 }
 
-.hero-btn:link, .hero-btn:active{
-    background-color:#e67e22;
-    padding: 1.6rem 3.2rem;
-    margin-top: 1rem;
+.hero-btn:any-link {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
 
-    font-size: 2.4rem;
-    font-weight: 500;
-    text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-decoration: none;
 
-    border-radius: 9px;
-
+  border-radius: 9px;
 }
 
-.btn-cta:link, .btn-cta:visited{
-    color: #fff;
-    margin-right: 2rem;
+.btn-cta {
+  background-color: #e67e22;
+  color: #fff;
+  margin-right: 2rem;
 }
 
-.btn-down:link, .btn-down:visited{
-    color: #343a40;
-    background-color: #f8d8bd;
+.btn-down{
+  background-color: #f8d8bd;
+  color: #343a40;
+  
 }
 
-
-.hero-img{
-    width: 100%;
+.hero-img {
+  width: 100%;
 }
-
-
