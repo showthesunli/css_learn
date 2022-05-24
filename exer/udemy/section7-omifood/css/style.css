@@ -9,6 +9,10 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+
+/************************/
+/* 一般重用组件 */
+/************************/
 * {
   box-sizing: border-box;
 }
@@ -22,6 +26,28 @@ html {
   font-family: "Rubik", sans-serif;
   color: #343a40;
 }
+
+/************************/
+/* header components */
+/************************/
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fdf2e9;
+  padding: 0 4.8rem;
+  height: 9.6rem;
+}
+
+.omnifood-logo{
+  height: 2.2rem;
+}
+
+/************************/
+/* hero section */
+/************************/
 
 .hero {
   background-color: #fdf2e9;
@@ -118,3 +144,4 @@ html {
 .delivered-text span{
   color: #cf711f;
 }
+
