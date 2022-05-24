@@ -19,7 +19,7 @@ html {
   /* chrome 默认font-size 是16px 16*0.625 = 10 */
   /* font-size = 62.5%时，fonte-size的实际值为10px，方便计算。 */
   font-size: 62.5%;
-  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #343a40;
 }
 
@@ -93,4 +93,28 @@ html {
 
 .hero-img {
   width: 100%;
+}
+
+.delivered-meals{
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.delivered-imgs>img{
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid #fdf2e9;
+  margin-right: -1.2rem;
+}
+
+
+.delivered-text{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.delivered-text span{
+  color: #cf711f;
 }
