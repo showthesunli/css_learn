@@ -30,7 +30,8 @@ html {
 .hero-container {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding-top: 4.8rem;
+  padding-bottom: 9.6rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -71,10 +72,23 @@ html {
   margin-right: 2rem;
 }
 
+.btn-cta:hover,
+.btn-cta:active{
+  transition: all, 0.5s;
+  background-color: #cf711f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .btn-down{
-  background-color: #f8d8bd;
+  background-color: #fff;
   color: #343a40;
-  
+}
+
+.btn-down:hover,
+.btn-down:active{
+  transition: all, 1s;
+  background-color: #f8d8bd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-img {
