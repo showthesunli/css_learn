@@ -273,7 +273,8 @@ p.step-description{
 
 .howto-step-img img{
   display: inline-block;
-  max-width: 25rem;
+  width: 40%;
+
 }
 
 .section-how-to .grid{
