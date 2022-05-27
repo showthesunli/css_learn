@@ -233,9 +233,47 @@ p.step-description{
   line-height: 1.8;
 }
 
+.howto-step-img{
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.howto-step-img::before{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.howto-step-img::after{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 60%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
 .howto-step-img img{
   display: inline-block;
-  height: 50rem;
+  max-width: 25rem;
 }
 
 .section-how-to .grid{
