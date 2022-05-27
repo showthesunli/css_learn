@@ -72,7 +72,9 @@ html {
 
 .grid{
   display: grid;
-  gap: 9.6rem;
+  /* gap: 9.6rem; */
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
 }
 
 .grid--2-cols{
@@ -239,6 +241,7 @@ p.step-description{
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .howto-step-img::before{
