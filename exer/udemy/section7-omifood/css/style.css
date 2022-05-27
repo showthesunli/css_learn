@@ -204,14 +204,41 @@ html {
 /* section how to */
 /***********************/
 .howto-subtitle{
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #cf711f;
   text-transform: uppercase;
 }
 
 .howto-title{
   font-size: 3.6rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 3.2rem;
-  
+}
+
+.step-index{
+  font-size: 8.6rem;
+  font-weight: 700;
+  color: #dee2e6;
+  margin-bottom: 3.2rem;
+}
+
+h3.step-title{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+p.step-description{
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.howto-step-img img{
+  display: inline-block;
+  height: 50rem;
+}
+
+.section-how-to .grid{
+  align-items: center;
+  justify-items: center;
 }
