@@ -248,8 +248,10 @@ p.step-description{
   position: absolute;
   display: block;
   content: "";
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  /* height: 80%; */
+  /* 因为这里的content=""，盒元素为空，它没有被内容撑开高度，所以这个盒元素的高度为0。padding中的百分号是相对于父元素的宽度计算，当盒元素的高度为0，而padding-bottom与width都是相对于父元素设置一个具有相同百分比的值时，刚好能构造一个正方形盒元素。*/
+  padding-bottom: 70%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -263,8 +265,9 @@ p.step-description{
   position: absolute;
   display: block;
   content: "";
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  /* height: 60%; */
+  padding-bottom: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
