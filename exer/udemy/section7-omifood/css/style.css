@@ -291,3 +291,27 @@ p.step-description{
   align-items: center;
   justify-items: center;
 }
+
+/* ****************** */
+/* feature in section */
+/* ****************** */
+.feature-in{
+  margin-bottom: 9.6rem;
+}
+.feature-in-text{
+  text-transform: uppercase;
+  text-align: center;
+  color: #adb5bd;
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.feautre-in-logos{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.feautre-in-logos>img{
+  height: 3.2rem;
+}
