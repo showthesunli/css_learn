@@ -244,37 +244,39 @@ p.step-description{
   align-items: center;
 }
 
+/* 两个伪元素的通用部分 */
+.howto-step-img::after,
 .howto-step-img::before{
   position: absolute;
   display: block;
   content: "";
-  width: 70%;
-  /* height: 80%; */
-  /* 因为这里的content=""，盒元素为空，它没有被内容撑开高度，所以这个盒元素的高度为0。padding中的百分号是相对于父元素的宽度计算，当盒元素的高度为0，而padding-bottom与width都是相对于父元素设置一个具有相同百分比的值时，刚好能构造一个正方形盒元素。*/
-  padding-bottom: 70%;
+
+  /* 居中 */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
+  /* 圆形盒 */
   border-radius: 50%;
+}
+
+.howto-step-img::before{
+  
+  width: 70%;
+  /* height: 80%; */
+  /* 因为这里的content=""，盒元素为空，它没有被内容撑开高度，所以这个盒元素的高度为0。padding中的百分号是相对于父元素的宽度计算，当盒元素的高度为0，而padding-bottom与width都是相对于父元素设置一个具有相同百分比的值时，刚好能构造一个正方形盒元素。*/
+  padding-bottom: 70%;
+  
   background-color: #fdf2e9;
   z-index: -2;
 }
 
 .howto-step-img::after{
-  position: absolute;
-  display: block;
-  content: "";
+
   width: 50%;
-  /* height: 60%; */
-  /* padding-bottom: 50%; */
   /* aspect-ratio 设置盒元素具有固定的宽高比 */
   aspect-ratio: 1/1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
-  border-radius: 50%;
   background-color: #fae5d3;
   z-index: -1;
 }
