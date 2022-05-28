@@ -189,7 +189,7 @@ html {
   height: 4.8rem;
   border-radius: 50%;
   border: 3px solid #fdf2e9;
-  margin-right: -1.2rem;
+  margin-right: -1.3rem;
 }
 
 
@@ -267,7 +267,9 @@ p.step-description{
   content: "";
   width: 50%;
   /* height: 60%; */
-  padding-bottom: 50%;
+  /* padding-bottom: 50%; */
+  /* aspect-ratio 设置盒元素具有固定的宽高比 */
+  aspect-ratio: 1/1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
