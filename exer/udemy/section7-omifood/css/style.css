@@ -296,7 +296,7 @@ p.step-description{
 /* feature in section */
 /* ****************** */
 .feature-in{
-  margin-bottom: 9.6rem;
+  margin-bottom: 3.2rem;
 }
 .feature-in-text{
   text-transform: uppercase;
@@ -314,4 +314,8 @@ p.step-description{
 
 .feautre-in-logos>img{
   height: 3.2rem;
+  /* 过滤器，将图片设置为黑色 */
+  filter: brightness(0);
+  /* 透明度，可以是百分数或大于零小于一的小数 */
+  opacity: 30%;
 }
