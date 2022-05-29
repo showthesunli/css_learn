@@ -319,3 +319,52 @@ p.step-description{
   /* 透明度，可以是百分数或大于零小于一的小数 */
   opacity: 30%;
 }
+
+/* ****************** */
+/* meals section */
+/* ****************** */
+.meals-text{
+  text-transform: uppercase;
+  text-align: center;
+  color: #e67e22;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+h2.meals-title{
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.meal-card{
+  width: 100%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+.meal-card img{
+  width: 100%;
+  border-radius: 9px 9px 0 0;
+}
+
+.meal-card-container{
+  padding: 2.4rem 3.2rem;
+}
+
+.recipe-lables-container{
+  display: flex;
+  gap:0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.recipe-lable{
+  background-color: #8ce99a;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 9px;
+  padding: 0.4rem 0.8rem;
+}
+
