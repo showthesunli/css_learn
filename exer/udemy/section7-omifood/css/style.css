@@ -340,6 +340,9 @@ h2.meals-title{
 .meal-card{
   /* width: 100%; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  /* card设计了圆角，但内部图片没有设置圆角，导致图片溢出，覆盖掉圆角。将overflow设置为hidden即可屏蔽掉溢出的图片 */
+  border-radius: 9px;
+  overflow: hidden;
 }
 
 .meal-card:hover{
@@ -350,7 +353,6 @@ h2.meals-title{
 
 .meal-card img{
   width: 100%;
-  border-radius: 9px 9px 0 0;
 }
 
 .meal-card-container{
