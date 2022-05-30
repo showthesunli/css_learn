@@ -205,6 +205,10 @@ html {
 /***********************/
 /* section how to */
 /***********************/
+.section-how-to{
+  margin-bottom: 9.6rem;
+}
+
 .howto-subtitle{
   font-size: 1.8rem;
   color: #cf711f;
@@ -323,6 +327,10 @@ p.step-description{
 /* ****************** */
 /* meals section */
 /* ****************** */
+.meals{
+  margin-bottom: 9.6rem;
+}
+
 .meals-text{
   text-transform: uppercase;
   text-align: center;
@@ -343,12 +351,14 @@ h2.meals-title{
   /* card设计了圆角，但内部图片没有设置圆角，导致图片溢出，覆盖掉圆角。将overflow设置为hidden即可屏蔽掉溢出的图片 */
   border-radius: 9px;
   overflow: hidden;
+  transition: all 0.5s;
 }
 
 .meal-card:hover{
-  transition: bottom 0.5s;
-  position: relative;
-  bottom: 2rem;
+  
+  /* position: relative;
+  bottom: 2rem; */
+  transform: translate(0, -5%);
 }
 
 .meal-card img{
@@ -413,3 +423,13 @@ h3.diet-title{
   color: #cf711f;
   font-size: 2rem;
 }
+
+.all-recipes:hover,
+.all-recipes:active{
+  text-decoration: none;
+  color: #ae5e19;
+}
+
+/* ****************** */
+/* meals section */
+/* ****************** */
