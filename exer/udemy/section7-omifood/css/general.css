@@ -1,0 +1,94 @@
+/* 
+
+primary #e67e22
+tints #fdf2e9
+gray #343a40
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/************************/
+/* 一般通用组件 */
+/************************/
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* font-size: 10px; */
+    /* 当font-size为百分数时，font-size是基于用户浏览器默认的值的百分比。所以使用百分比不会破坏用户的自定义设置*/
+    /* chrome 默认font-size 是16px 16*0.625 = 10 */
+    /* font-size = 62.5%时，fonte-size的实际值为10px，方便计算。 */
+    font-size: 62.5%;
+    font-family: "Rubik", sans-serif;
+    color: #343a40;
+  }
+  
+  /* 通用按钮样式组件 */
+  .btn:any-link {
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+  
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-decoration: none;
+  
+    border-radius: 9px;
+  }
+  
+  .btn-cta {
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 2rem;
+  }
+  
+  .btn-cta:hover,
+  .btn-cta:active{
+    transition: all, 0.5s;
+    background-color: #cf711f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-down{
+    background-color: #fff;
+    color: #343a40;
+  }
+  
+  .btn-down:hover,
+  .btn-down:active{
+    transition: all, 1s;
+    background-color: #f8d8bd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container{
+    margin: 0 auto;
+    padding: 3.2rem;
+    max-width: 120rem;
+  }
+  
+  .grid{
+    display: grid;
+    /* gap: 9.6rem; */
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+  }
+  
+  .grid--2-cols{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid--3-cols{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4-cols{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .mr--md{
+    margin-right: 2.4rem;
+  }
