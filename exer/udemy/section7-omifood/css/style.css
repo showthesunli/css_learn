@@ -211,7 +211,7 @@ p.step-description {
 }
 
 /* ****************** */
-/* feature in section */
+/* feature-in section */
 /* ****************** */
 .feature-in {
   margin-bottom: 3.2rem;
@@ -393,13 +393,17 @@ figcaption {
   gap: 2.4rem;
 }
 
+.img-container{
+  overflow: hidden;
+}
+
 .testimonial-imgrid img {
   width: 100%;
   transition: all 0.5s;
 }
 
 .testimonial-imgrid img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 /* ****************** */
 /* pricing section */
