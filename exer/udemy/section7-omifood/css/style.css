@@ -88,6 +88,10 @@ html {
 .grid--4-cols{
   grid-template-columns: repeat(4, 1fr);
 }
+
+.mr--md{
+  margin-right: 2.4rem;
+}
 /************************/
 /* header components */
 /************************/
@@ -437,6 +441,7 @@ h3.diet-title{
   background-color: #fdf2e9;
   padding: 2.4rem;
   align-items: center;
+  margin-bottom: 9.6rem;
 }
 
 .testimonial-text{
@@ -460,7 +465,7 @@ h2.testimonial-title{
 .person-avarta{
   width: 8rem;
   border-radius: 50%;
-  margin-bottom: 4.4rem;
+  margin-bottom: 1.6rem;
 }
 
 figcaption{
@@ -488,3 +493,94 @@ figcaption{
 .testimonial-imgrid img:hover{
   transform: scale(1.1);
 }
+/* ****************** */
+/* pricing section */
+/* ****************** */
+
+.pricing-text{
+  font-size: 2rem;
+  color: #e67e22;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+h2.pricing-title{
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 9.6rem;
+}
+
+.pricing-card{
+  width: 75%;
+  text-align: center;
+  padding: 4.8rem 5.2rem;
+}
+
+.card-left{
+  justify-self: end;
+  border:2px solid #fdf2e9;
+}
+
+.card-right{
+  justify-self: start;
+  background: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-right::after{
+  content: "best value";
+  display: block;
+  text-transform: uppercase;
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  left: 61%;
+  background-color: #fcc419;
+  transform: rotate(45deg);
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  height: 2.8rem;
+  text-align: center;
+}
+
+h3.pricing-card-title{
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2.4rem;
+  color: #e67e22;
+}
+
+.pricing-num{
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  
+}
+
+.pricing-num-description{
+  font-size: 1.6rem;
+  color: #868e96;
+  margin-bottom: 4.8rem;
+}
+
+ul.pricing-list{
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.pricing-list-item{
+  padding: 1.2rem 0;
+}
+
+.pricing-bottom-description{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/************************/
+/* feature components */
+/************************/
