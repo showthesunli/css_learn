@@ -611,3 +611,53 @@ input[type=button]:hover{
 .sign-up-img img {
   width: 100%;
 }
+
+/********************/
+/*footer component  */
+/********************/
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  gap: 6.4rem;
+  color: #495057;
+}
+
+.social-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.omnifood-logo{
+  margin-bottom: 3rem;
+}
+
+.omnifood-logo img{
+  width: 100%;
+}
+
+.social-logo-link a{
+  color: #495057;
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+
+.footer-column-title{
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+ul.footer-column-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-column-list-item a:any-link{
+  color: #495057;
+  text-decoration: none;
+}
