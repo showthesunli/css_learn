@@ -93,7 +93,5 @@ FONT SIZE SYSTEM (px)
     margin-right: 2.4rem;
   }
 
-  .footer-grid{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-  }
+
+
