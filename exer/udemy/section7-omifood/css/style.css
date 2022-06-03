@@ -575,6 +575,13 @@ h2.form-title{
   font-size: 2rem;
   border-radius: 9px;
   border: none;
+  font-family: inherit;
+  background-color: #fae5d3;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.form-ele input::placeholder{
+  color: #868e96;
 }
 
 input[type=button]{
@@ -585,6 +592,7 @@ input[type=button]{
   font-size: 2rem;
   font-weight: 700;
   transition: all 0.5s;
+  font-family: inherit;
 }
 
 input[type=button]:hover{
