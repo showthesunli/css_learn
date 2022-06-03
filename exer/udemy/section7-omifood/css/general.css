@@ -16,6 +16,11 @@ FONT SIZE SYSTEM (px)
 * {
     box-sizing: border-box;
   }
+
+  *:focus{
+    outline: none;
+    box-shadow: 0 0 1rem 1rem hsla(28, 80%, 52%, 0.5);
+  }
   
   html {
     /* font-size: 10px; */

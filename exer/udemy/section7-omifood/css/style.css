@@ -24,8 +24,11 @@ FONT SIZE SYSTEM (px)
   height: 9.6rem;
 }
 
-.omnifood-logo {
+
+
+.header-omnifood-logo {
   height: 2.2rem;
+  vertical-align: middle;
 }
 
 /************************/
@@ -580,6 +583,16 @@ h2.form-title{
   box-shadow: rgba(0, 0, 0, 0.1);
 }
 
+/* .form-ele *{
+  
+  outline: #f0b27a solid 0.5rem;
+} */
+
+.form-ele *:focus{
+  outline: none;
+  box-shadow: 0 0 0 1rem #f0b27a;
+}
+
 .form-ele input::placeholder{
   color: #868e96;
 }
@@ -614,9 +627,7 @@ input[type=button]:hover{
   height: 100%;
 }
 
-.sign-up-img img {
-  width: 100%;
-}
+
 
 /********************/
 /*footer component  */
