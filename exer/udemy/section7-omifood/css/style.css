@@ -597,15 +597,13 @@ input[type=button]:hover{
 }
 
 .sign-up-img {
-  width: 100%;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(235, 151, 78, 0.35),
-      rgba(230, 125, 34, 0.35)
-    ),
-    url(../img/eating.jpg);
+    rgba(118, 72, 12, 0.4),
+    rgba(118, 72, 12, 0.4)),
+  url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
+  height: 100%;
 }
 
 .sign-up-img img {
