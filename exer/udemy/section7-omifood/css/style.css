@@ -632,9 +632,12 @@ input[type=button]:hover{
 /********************/
 /*footer component  */
 /********************/
+footer{
+  border-top: 2px solid #eee;
+}
 .footer-grid{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
   font-size: 1.6rem;
   line-height: 1.6;
   gap: 6.4rem;
