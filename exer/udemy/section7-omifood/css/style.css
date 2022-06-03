@@ -333,9 +333,13 @@ h3.diet-title {
   gap: 2.4rem;
 }
 
+.recipes-text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .all-recipes:any-link {
-  display: block;
-  text-align: center;
   color: #cf711f;
   font-size: 2rem;
 }
