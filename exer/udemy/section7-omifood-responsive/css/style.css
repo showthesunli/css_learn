@@ -69,8 +69,6 @@ FONT SIZE SYSTEM (px)
 .hero-container {
   max-width: 130rem;
   margin: 0 auto;
-  padding-top: 4.8rem;
-  padding-bottom: 9.6rem;
   padding: 4.8rem 3.2rem 9.6rem 3.2rem;
 
   display: grid;
@@ -110,7 +108,11 @@ FONT SIZE SYSTEM (px)
   height: 4.8rem;
   border-radius: 50%;
   border: 3px solid #fdf2e9;
-  margin-right: -1.3rem;
+  
+}
+
+.delivered-meals img:not(:last-of-type){
+  margin-right: -1.5rem;
 }
 
 .delivered-text {

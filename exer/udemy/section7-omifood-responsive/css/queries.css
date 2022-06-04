@@ -1,16 +1,47 @@
 /* media queries css code */
 /* media queries中使用em作为单位 1rem = 1em = 16px，16px是浏览器默认的字体大小 */
+/* 
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
 
 /****************************************/
 /*小的笔记本电脑     1344/16 = 84em      */
 /****************************************/
-@media (max-width:84em) {
-    .hero-container{
-        max-width: 120rem !important;
-    }
+@media (max-width: 84em) {
+  .hero-container {
+    max-width: 120rem !important;
+  }
 
-    .hero-title{
-        font-size: 4.4rem !important;
-    }
+  .hero-title {
+    font-size: 4.4rem !important;
+  }
 
+  .delivered-meals {
+    gap: 1.6rem !important;
+  }
+
+  .delivered-meals img:not(:last-of-type) {
+    margin-right: -2rem !important;
+  }
+}
+
+/****************************************/
+/*平板电脑     1200/16 = 75em      */
+/****************************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25% 基于浏览器的默认字体大小为16px  */
+    font-size: 56.25% ;
+  }
+
+  .testimonial-imgrid{
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .testmonial-figure-grid{
+      grid-template-columns: 1fr;
+  }
 }
