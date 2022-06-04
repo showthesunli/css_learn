@@ -1,0 +1,16 @@
+/* media queries css code */
+/* media queries中使用em作为单位 1rem = 1em = 16px，16px是浏览器默认的字体大小 */
+
+/****************************************/
+/*小的笔记本电脑     1344/16 = 84em      */
+/****************************************/
+@media (max-width:84em) {
+    .hero-container{
+        max-width: 120rem !important;
+    }
+
+    .hero-title{
+        font-size: 4.4rem !important;
+    }
+
+}
