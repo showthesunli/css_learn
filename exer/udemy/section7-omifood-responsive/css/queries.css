@@ -23,9 +23,6 @@ FONT SIZE SYSTEM (px)
     gap: 1.6rem !important;
   }
 
-  .delivered-meals img:not(:last-of-type) {
-    margin-right: -2rem !important;
-  }
 }
 
 /****************************************/
@@ -52,6 +49,6 @@ FONT SIZE SYSTEM (px)
   
   .main-nav-list{
     gap: 3.2rem;
-    
+
   }
 }

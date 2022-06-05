@@ -112,7 +112,7 @@ FONT SIZE SYSTEM (px)
 }
 
 .delivered-meals img:not(:last-of-type){
-  margin-right: -1.5rem;
+  margin-right: -2.5rem;
 }
 
 .delivered-text {
