@@ -34,7 +34,7 @@ FONT SIZE SYSTEM (px)
 @media (max-width: 75em) {
   html {
     /* 9px / 16px = 56.25% 基于浏览器的默认字体大小为16px  */
-    font-size: 56.25% ;
+    font-size: 56.25%;
   }
 
   .testimonial-imgrid{
@@ -43,5 +43,15 @@ FONT SIZE SYSTEM (px)
   
   .testmonial-figure-grid{
       grid-template-columns: 1fr;
+  }
+
+  .grid{
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
+  }
+  
+  .main-nav-list{
+    gap: 3.2rem;
+    
   }
 }
