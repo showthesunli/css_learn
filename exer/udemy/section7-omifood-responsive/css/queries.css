@@ -197,5 +197,36 @@ FONT SIZE SYSTEM (px)
     width: 100%;
   }
 
-  
+  .grid--3-cols{
+    gap: 2rem;
+  }
+}
+
+/****************************************/
+/*     688/16 = 43em      */
+/****************************************/
+@media (max-width: 43em){
+  .meals{
+    margin-bottom: 6.4rem;
+  }
+
+  .meals .grid{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .meal-card-diet{
+    
+    grid-column:1/span 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial-imgrid {
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
 }
