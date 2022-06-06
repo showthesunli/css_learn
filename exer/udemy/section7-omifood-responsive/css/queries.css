@@ -123,6 +123,13 @@ FONT SIZE SYSTEM (px)
 /*     832/16 = 52em      */
 /****************************************/
 @media (max-width: 52em){
+  html{
+    overflow-x: hidden;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
   .main-nav{
     position: absolute;
     top: 0;
@@ -150,21 +157,6 @@ FONT SIZE SYSTEM (px)
     visibility: hidden;
   }
 
-  .open-nav .main-nav{
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
-    visibility: visible;
-  }
-
-  .open-nav ion-icon[name=close-outline]{
-    display: block;
-  }
-
-  .open-nav ion-icon[name=menu-outline]{
-    display: none;
-  }
-
   .main-nav-list{
     display: flex;
     flex-direction: column;
@@ -180,4 +172,30 @@ FONT SIZE SYSTEM (px)
     display: block;
   }
 
+  /* open-nav 是加载在header上的工具类，
+  当有open-nav时下方的样式起作用， 即mobile nav打开的时候*/
+  .open-nav .main-nav{
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .open-nav ion-icon[name=close-outline]{
+    display: block;
+  }
+
+  .open-nav ion-icon[name=menu-outline]{
+    display: none;
+  }
+
+  .feautre-in-logos > img{
+    height: 2rem;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+
+  
 }
