@@ -22,7 +22,6 @@ FONT SIZE SYSTEM (px)
   .delivered-meals {
     gap: 1.6rem !important;
   }
-
 }
 
 /****************************************/
@@ -34,21 +33,86 @@ FONT SIZE SYSTEM (px)
     font-size: 56.25%;
   }
 
-  .testimonial-imgrid{
-      grid-template-columns: 1fr 1fr;
-  }
-  
-  .testmonial-figure-grid{
-      grid-template-columns: 1fr;
+  .testimonials {
+    grid-template-columns: 1fr;
   }
 
-  .grid{
+  .testimonial-imgrid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.2rem !important;
+    padding: 0 3.2rem;
+  }
+
+  .grid {
     row-gap: 6.4rem;
     column-gap: 3.2rem;
   }
-  
-  .main-nav-list{
-    gap: 3.2rem;
 
+  .main-nav-list {
+    gap: 3.2rem;
   }
+}
+/****************************************/
+/*     1008/16 = 63em      */
+/****************************************/
+
+@media (max-width: 63em) {
+  .html {
+    /* 8px/16px = 50% */
+    font-size: 50%;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 3fr 2fr;
+    justify-items: center;
+  }
+
+  .social-link{
+    gap: 2.4rem;
+  }
+  .omnifood-logo{
+    margin-bottom: 1.2rem;
+  }
+
+  .omnifood-logo img{
+    height: 2.2rem;
+    
+  }
+
+  .account,
+  .company,
+  .resource{
+    grid-column: span 2;
+  }
+
+  .social-link,
+  .Contact {
+    grid-column: span 3;
+    grid-row: 2 / -1;
+  }
+}
+/****************************************/
+/*     832/16 = 52em      */
+/****************************************/
+@media (max-width: 52em){
+  
 }
