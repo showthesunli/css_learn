@@ -109,10 +109,15 @@ FONT SIZE SYSTEM (px)
     grid-column: span 3;
     grid-row: 2 / -1;
   }
+
+  .grid--4-cols{
+    grid-template-columns: 1fr 1fr;
+  }
+  
 }
 /****************************************/
 /*     832/16 = 52em      */
 /****************************************/
 @media (max-width: 52em){
-  
+
 }
