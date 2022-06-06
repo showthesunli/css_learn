@@ -230,3 +230,71 @@ FONT SIZE SYSTEM (px)
     
   }
 }
+/****************************************/
+/*     576/16 = 36em      */
+/****************************************/
+@media (max-width: 36em){
+  .section-how-to .grid{
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .step-index {
+    font-size: 5.2rem;
+  }
+
+  .howto-step-img:nth-child(2){
+    grid-row: 1;
+  }
+
+  .howto-step-img:nth-child(6){
+    grid-row: 5;
+  }
+
+  .meals .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .testmonial-figure-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .pricing .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .feature .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .sign-up-img{
+    grid-row: 1;
+    height: 40rem;
+  }
+
+  form.grid{
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .form-ele:last-of-type{
+    height: 5rem;
+  }
+
+  .feautre-in-logos > img{
+    height: 2rem;
+  }
+  .btn.btn-cta{
+    display: block;
+  }
+  .btn.btn-down{
+    display: block;
+  }
+  .delivered-meals {
+    flex-direction: column;
+  }
+}
