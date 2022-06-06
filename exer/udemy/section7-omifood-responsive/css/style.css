@@ -31,6 +31,9 @@ FONT SIZE SYSTEM (px)
   vertical-align: middle;
 }
 
+.open-navicons{
+  display: none;
+}
 /************************/
 /* navigation components in header */
 /************************/

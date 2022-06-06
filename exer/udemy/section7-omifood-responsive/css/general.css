@@ -44,6 +44,7 @@ FONT SIZE SYSTEM (px)
     border-radius: 9px;
   }
   
+  
   .btn-cta {
     background-color: #e67e22;
     color: #fff;
@@ -96,4 +97,17 @@ FONT SIZE SYSTEM (px)
   
   .mr--md{
     margin-right: 2.4rem;
+  }
+
+  .nav-icon{
+    background-color: #fdf2e9;
+    border: none;
+    display: none;
+  }
+
+  ion-icon[name=menu-outline],
+  ion-icon[name=close-outline]{
+    font-size: 4rem;
+    font-weight: 500;
+    display: none;
   }
