@@ -229,7 +229,7 @@ FONT SIZE SYSTEM (px)
 }
 /****************************************/
 /*     576/16 = 36em      */
-/******************
+/****************************************/
 @media (max-width: 36em){
   .section-how-to .grid{
     grid-template-columns: 1fr;
@@ -303,5 +303,9 @@ FONT SIZE SYSTEM (px)
   .delivered-meals {
     flex-direction: column;
   }
+
+  .btn-cta{
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 }
-**********************/

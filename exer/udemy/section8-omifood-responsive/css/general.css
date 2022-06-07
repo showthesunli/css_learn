@@ -35,6 +35,7 @@ FONT SIZE SYSTEM (px)
 
   body{
     overflow-x: hidden;
+    position: relative;
   }
   
   /* 通用按钮样式组件 */
