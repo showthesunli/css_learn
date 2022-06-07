@@ -12,15 +12,15 @@ FONT SIZE SYSTEM (px)
 /****************************************/
 @media (max-width: 84em) {
   .hero-container {
-    max-width: 120rem !important;
+    max-width: 120rem ;
   }
 
   .hero-title {
-    font-size: 4.4rem !important;
+    font-size: 4.4rem ;
   }
 
   .delivered-meals {
-    gap: 1.6rem !important;
+    gap: 1.6rem;
   }
 }
 
@@ -39,7 +39,7 @@ FONT SIZE SYSTEM (px)
 
   .testimonial-imgrid {
     grid-template-columns: repeat(6, 1fr);
-    gap: 1.2rem !important;
+    gap: 1.2rem;
     padding: 0 3.2rem;
   }
 
@@ -115,7 +115,7 @@ FONT SIZE SYSTEM (px)
   }
 
   .pricting-cta{
-    font-size: 2rem !important;
+    font-size: 2rem ;
   }
   
 }
@@ -123,13 +123,10 @@ FONT SIZE SYSTEM (px)
 /*     832/16 = 52em      */
 /****************************************/
 @media (max-width: 52em){
-  html{
+  .header{
     overflow-x: hidden;
   }
-
-  body{
-    overflow-x: hidden;
-  }
+  
   .main-nav{
     position: absolute;
     top: 0;
@@ -232,7 +229,7 @@ FONT SIZE SYSTEM (px)
 }
 /****************************************/
 /*     576/16 = 36em      */
-/****************************************/
+/******************
 @media (max-width: 36em){
   .section-how-to .grid{
     grid-template-columns: 1fr;
@@ -255,9 +252,18 @@ FONT SIZE SYSTEM (px)
     grid-template-columns: 1fr;
   }
 
+  .meal-card-diet{
+    grid-column: unset;
+  }
+
   .testmonial-figure-grid{
     grid-template-columns: 1fr;
   }
+  .testimonial-text,
+  .testimonial-imgrid{
+    padding: 0;
+  }
+
 
   .pricing .grid{
     grid-template-columns: 1fr;
@@ -298,3 +304,4 @@ FONT SIZE SYSTEM (px)
     flex-direction: column;
   }
 }
+**********************/

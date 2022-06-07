@@ -30,6 +30,11 @@ FONT SIZE SYSTEM (px)
     font-size: 62.5%;
     font-family: "Rubik", sans-serif;
     color: #343a40;
+    overflow-x: hidden;
+  }
+
+  body{
+    overflow-x: hidden;
   }
   
   /* 通用按钮样式组件 */
