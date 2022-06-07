@@ -1,0 +1,692 @@
+/* 
+
+primary #e67e22
+tints #fdf2e9
+gray #343a40
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/************************/
+/* header components */
+/************************/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fdf2e9;
+  padding: 0 4.8rem;
+  height: 9.6rem;
+}
+
+
+
+.header-omnifood-logo {
+  height: 2.2rem;
+  vertical-align: middle;
+}
+
+.open-navicons{
+  display: none;
+}
+/************************/
+/* navigation components in header */
+/************************/
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.main-nav-list a:any-link:not(.btn-nav) {
+  text-decoration: none;
+  color: #343a40;
+}
+.main-nav-list a:hover:not(.btn-nav) {
+  transition: all, 0.5s;
+  color: #cf711f;
+}
+
+.btn.btn-cta.btn-nav {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/************************/
+/* hero section */
+/************************/
+
+.hero {
+  background-color: #fdf2e9;
+}
+
+.hero-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 4.8rem 3.2rem 9.6rem 3.2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+
+  margin-bottom: 4.8rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.8;
+
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid #fdf2e9;
+  
+}
+
+.delivered-meals img:not(:last-of-type){
+  margin-right: -2.5rem;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.delivered-text span {
+  color: #cf711f;
+}
+
+/***********************/
+/* section how to */
+/***********************/
+.section-how-to {
+  margin-bottom: 9.6rem;
+}
+
+.howto-subtitle {
+  font-size: 1.8rem;
+  color: #cf711f;
+  text-transform: uppercase;
+}
+
+.howto-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: 3.2rem;
+}
+
+.step-index {
+  font-size: 8.6rem;
+  font-weight: 700;
+  color: #dee2e6;
+  margin-bottom: 3.2rem;
+}
+
+h3.step-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+p.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.howto-step-img {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 两个伪元素的通用部分 */
+.howto-step-img::after,
+.howto-step-img::before {
+  position: absolute;
+  display: block;
+  content: "";
+
+  /* 居中 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* 圆形盒 */
+  border-radius: 50%;
+}
+
+.howto-step-img::before {
+  width: 70%;
+  /* height: 80%; */
+  /* 因为这里的content=""，盒元素为空，它没有被内容撑开高度，所以这个盒元素的高度为0。padding中的百分号是相对于父元素的宽度计算，当盒元素的高度为0，而padding-bottom与width都是相对于父元素设置一个具有相同百分比的值时，刚好能构造一个正方形盒元素。*/
+  padding-bottom: 70%;
+
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.howto-step-img::after {
+  width: 50%;
+  /* aspect-ratio 设置盒元素具有固定的宽高比 */
+  aspect-ratio: 1/1;
+
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+.howto-step-img img {
+  display: inline-block;
+  width: 40%;
+}
+
+.section-how-to .grid {
+  align-items: center;
+  justify-items: center;
+}
+
+/* ****************** */
+/* feature-in section */
+/* ****************** */
+.feature-in {
+  margin-bottom: 3.2rem;
+}
+.feature-in-text {
+  text-transform: uppercase;
+  text-align: center;
+  color: #adb5bd;
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.feautre-in-logos {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.feautre-in-logos > img {
+  height: 3.2rem;
+  /* 过滤器，将图片设置为黑色 */
+  filter: brightness(0);
+  /* 透明度，可以是百分数或大于零小于一的小数 */
+  opacity: 30%;
+}
+
+/* ****************** */
+/* meals section */
+/* ****************** */
+.meals {
+  margin-bottom: 9.6rem;
+}
+
+.meals-text {
+  text-transform: uppercase;
+  text-align: center;
+  color: #e67e22;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+h2.meals-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.meal-card {
+  /* width: 100%; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  /* card设计了圆角，但内部图片没有设置圆角，导致图片溢出，覆盖掉圆角。将overflow设置为hidden即可屏蔽掉溢出的图片 */
+  border-radius: 9px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.meal-card:hover {
+  /* position: relative;
+  bottom: 2rem; */
+  transform: translate(0, -5%);
+}
+
+.meal-card img {
+  width: 100%;
+}
+
+.meal-card-container {
+  padding: 2.4rem 3.2rem;
+}
+
+.recipe-lables-container {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.recipe-lable {
+  background-color: #8ce99a;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 9px;
+  padding: 0.4rem 0.8rem;
+}
+
+h3.meal-card-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.meal-card-description-list-item {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 1.2rem 0;
+}
+
+.item-icon {
+  margin-right: 1.2rem;
+  color: #cf711f;
+}
+
+h3.diet-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  margin-bottom: 4.4rem;
+}
+
+.diet-list {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.recipes-text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-recipes:any-link {
+  color: #cf711f;
+  font-size: 2rem;
+}
+
+.all-recipes:hover,
+.all-recipes:active {
+  text-decoration: none;
+  color: #ae5e19;
+}
+
+/* ****************** */
+/* testimonials section */
+/* ****************** */
+.testimonials {
+  background-color: #fdf2e9;
+  padding: 2.4rem;
+  align-items: center;
+  margin-bottom: 9.6rem;
+}
+
+.testimonial-text {
+  padding: 0 9.6rem;
+}
+
+.testimonial-description {
+  font-size: 2rem;
+  color: #e67e22;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+h2.testimonial-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 9.6rem;
+}
+
+.person-avarta {
+  width: 8rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+figcaption {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.testimonial-description-text {
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-description-name {
+  color: #868e96;
+}
+
+.testimonial-imgrid {
+  gap: 2.4rem;
+}
+
+.img-container{
+  overflow: hidden;
+}
+
+.testimonial-imgrid img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.testimonial-imgrid img:hover {
+  transform: scale(1.2);
+}
+/* ****************** */
+/* pricing section */
+/* ****************** */
+
+.pricing-text {
+  font-size: 2rem;
+  color: #e67e22;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+h2.pricing-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 9.6rem;
+}
+
+.pricing-card {
+  width: 75%;
+  text-align: center;
+  padding: 4.8rem 5.2rem;
+}
+
+.card-left {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+}
+
+.card-right {
+  justify-self: start;
+  background: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-right::after {
+  content: "best value";
+  display: block;
+  text-transform: uppercase;
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  left: 61%;
+  background-color: #fcc419;
+  transform: rotate(45deg);
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  height: 2.8rem;
+  text-align: center;
+}
+
+h3.pricing-card-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2.4rem;
+  color: #e67e22;
+}
+
+.pricing-num {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.pricing-num-description {
+  font-size: 1.6rem;
+  color: #868e96;
+  margin-bottom: 4.8rem;
+}
+
+ul.pricing-list {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.pricing-list-item {
+  padding: 1.2rem 0;
+}
+
+.pricing-bottom-description {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/************************/
+/* feature components */
+/************************/
+.feature {
+  margin-bottom: 9.6rem;
+}
+.feature-icon {
+  margin-bottom: 3.2rem;
+}
+
+.feature-icon-style {
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #e67e22;
+  font-size: 4.4rem;
+}
+
+h3.feature-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  /* letter-spacing: -0.1rem; */
+  margin-bottom: 2.4rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+/*****************************************/
+/*section simple sign up form components */
+/*****************************************/
+.simple-signup-form {
+  margin-bottom: 9.6rem;
+}
+
+h2.form-title{
+  font-size: 4.4rem;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+.form-description{
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.form-grid {
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  background-color: #eb9549;
+  border-radius: 9px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 2px 2rem rgba(0, 0, 0, 0.5);
+}
+
+.signup-form{
+  gap: 2rem;
+  font-size: 2rem;
+  
+}
+
+.form-ele{
+  position: relative;
+}
+
+.form-ele label{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.form-ele input,
+.form-ele select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 4.4rem;
+  font-size: 2rem;
+  border-radius: 9px;
+  border: none;
+  font-family: inherit;
+  background-color: #fae5d3;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* .form-ele *{
+  
+  outline: #f0b27a solid 0.5rem;
+} */
+
+.form-ele *:focus{
+  outline: none;
+  box-shadow: 0 0 0 1rem #f0b27a;
+}
+
+.form-ele input::placeholder{
+  color: #868e96;
+}
+
+input[type=button]{
+  position: absolute;
+  bottom: 0;
+  background-color: #45260a;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all 0.5s;
+  font-family: inherit;
+}
+
+input[type=button]:hover{
+  background-color: #fff;
+  color: #343a40;
+}
+
+.sign-up-description {
+  padding: 3.2rem;
+}
+
+.sign-up-img {
+  background-image: linear-gradient(
+    rgba(118, 72, 12, 0.4),
+    rgba(118, 72, 12, 0.4)),
+  url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+
+/********************/
+/*footer component  */
+/********************/
+footer{
+  border-top: 2px solid #eee;
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  gap: 4.8rem;
+  color: #495057;
+}
+
+.social-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.omnifood-logo{
+  margin-bottom: 3rem;
+}
+
+.omnifood-logo img{
+  height: 2.2rem;
+}
+
+.social-logo-link a{
+  color: #495057;
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+
+.footer-column-title{
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+ul.footer-column-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-column-list-item a:any-link{
+  color: #495057;
+  text-decoration: none;
+}

@@ -1,0 +1,311 @@
+/* media queries css code */
+/* media queries中使用em作为单位 1rem = 1em = 16px，16px是浏览器默认的字体大小 */
+/* 
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/****************************************/
+/*小的笔记本电脑     1344/16 = 84em      */
+/****************************************/
+@media (max-width: 84em) {
+  .hero-container {
+    max-width: 120rem ;
+  }
+
+  .hero-title {
+    font-size: 4.4rem ;
+  }
+
+  .delivered-meals {
+    gap: 1.6rem;
+  }
+}
+
+/****************************************/
+/*平板电脑     1200/16 = 75em      */
+/****************************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25% 基于浏览器的默认字体大小为16px  */
+    font-size: 56.25%;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-imgrid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.2rem;
+    padding: 0 3.2rem;
+  }
+
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+}
+/****************************************/
+/*     1008/16 = 63em      */
+/****************************************/
+
+@media (max-width: 63em) {
+  html {
+    /* 8px/16px = 50% */
+    font-size: 50%;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 3fr 2fr;
+    justify-items: center;
+  }
+
+  .social-link{
+    gap: 2.4rem;
+  }
+  .omnifood-logo{
+    margin-bottom: 1.2rem;
+  }
+
+  .omnifood-logo img{
+    height: 2.2rem;
+    
+  }
+
+  .account,
+  .company,
+  .resource{
+    grid-column: span 2;
+  }
+
+  .social-link,
+  .Contact {
+    grid-column: span 3;
+    grid-row: 2 / -1;
+  }
+
+  .grid--4-cols{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricting-cta{
+    font-size: 2rem ;
+  }
+  
+}
+/****************************************/
+/*     832/16 = 52em      */
+/****************************************/
+@media (max-width: 52em){
+  .header{
+    overflow-x: hidden;
+  }
+  
+  .main-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s;
+    transform: translateX(100%);
+
+    /* display为none时，没有动画 */
+    /* display: none; */
+    /* opacity不透明度，0是完全透明，1是完全不透明 */
+    opacity: 0;
+
+    /* 设置鼠标与键盘事件不可选中 */
+    pointer-events: none;
+
+    /* 屏幕阅读器不可读 */
+    visibility: hidden;
+  }
+
+  .main-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    font-size: 4rem;
+  }
+
+  .nav-icon{
+    display: block;
+  }
+
+  ion-icon[name=menu-outline]{
+    display: block;
+  }
+
+  /* open-nav 是加载在header上的工具类，
+  当有open-nav时下方的样式起作用， 即mobile nav打开的时候*/
+  .open-nav .main-nav{
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .open-nav ion-icon[name=close-outline]{
+    display: block;
+  }
+
+  .open-nav ion-icon[name=menu-outline]{
+    display: none;
+  }
+
+  .feautre-in-logos > img{
+    height: 2rem;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+
+  .grid--3-cols{
+    gap: 2rem;
+  }
+}
+
+/****************************************/
+/*     688/16 = 43em      */
+/****************************************/
+@media (max-width: 43em){
+  .meals{
+    margin-bottom: 6.4rem;
+  }
+
+  .meals .grid{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .meal-card-diet{
+    
+    grid-column:1/span 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial-imgrid {
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+}
+/****************************************/
+/*     576/16 = 36em      */
+/****************************************/
+@media (max-width: 36em){
+  .section-how-to .grid{
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .step-index {
+    font-size: 5.2rem;
+  }
+
+  .howto-step-img:nth-child(2){
+    grid-row: 1;
+  }
+
+  .howto-step-img:nth-child(6){
+    grid-row: 5;
+  }
+
+  .meals .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .meal-card-diet{
+    grid-column: unset;
+  }
+
+  .testmonial-figure-grid{
+    grid-template-columns: 1fr;
+  }
+  .testimonial-text,
+  .testimonial-imgrid{
+    padding: 0;
+  }
+
+
+  .pricing .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .feature .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .sign-up-img{
+    grid-row: 1;
+    height: 40rem;
+  }
+
+  form.grid{
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .form-ele:last-of-type{
+    height: 5rem;
+  }
+
+  .feautre-in-logos > img{
+    height: 2rem;
+  }
+  .btn.btn-cta{
+    display: block;
+  }
+  .btn.btn-down{
+    display: block;
+  }
+  .delivered-meals {
+    flex-direction: column;
+  }
+
+  .btn-cta{
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
