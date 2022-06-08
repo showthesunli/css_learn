@@ -123,9 +123,7 @@ FONT SIZE SYSTEM (px)
 /*     832/16 = 52em      */
 /****************************************/
 @media (max-width: 52em){
-  .header{
-    overflow-x: hidden;
-  }
+  
   
   .main-nav{
     position: absolute;

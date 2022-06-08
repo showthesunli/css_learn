@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <script>
+      let user = {
+        firstName: "John",
+        sayHi() {
+          alert(`Hello, ${this.firstName}!`);
+        },
+      };
 
-  <style>
-    .box{
-      display: flex;
-      /* flex-wrap: wrap; */
+      let sayHi = user.sayHi.bind(user); // (*)
 
-    }
+      // 可以在没有对象（译注：与对象分离）的情况下运行它
+      sayHi(); // Hello, John!
 
-    .box div{
-      flex-shrink: 0;
-      flex-grow: 1;
-    }
+      setTimeout(sayHi, 1000); // Hello, John!
 
-    .box1{
-      background-color: aqua;
-    }
+      // 即使 user 的值在不到 1 秒内发生了改变
+      // sayHi 还是会使用预先绑定（pre-bound）的值，该值是对旧的 user 对象的引用
+      user.firstName = "lee";
+    </script>
+    <style>
+      .box {
+        display: flex;
+        /* flex-wrap: wrap; */
+      }
 
-    .box2{
-      background-color: bisque;
-    }
+      .box div {
+        flex-shrink: 0;
+        flex-grow: 1;
+      }
 
-    .box3{
-      background-color: burlywood;
-    }
+      .box1 {
+        background-color: aqua;
+      }
 
-    .hei{
-      height: 100px;
-      /* width: 1000px; */
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <div class="box1 hei"></div>
-    <div class="box2 hei"></div>
-    <div class="box3 hei"></div>
-  </div>
+      .box2 {
+        background-color: bisque;
+      }
 
-  <!-- <figure>
+      .box3 {
+        background-color: burlywood;
+      }
+
+      .hei {
+        height: 100px;
+        /* width: 1000px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box1 hei"></div>
+      <div class="box2 hei"></div>
+      <div class="box3 hei"></div>
+    </div>
+
+    <!-- <figure>
     <img src="../udemy/section6-components/hero.jpg" alt="">
     <figcaption>hero photo</figcaption>
   </figure> -->
-</body>
+  </body>
 </html>

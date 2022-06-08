@@ -117,3 +117,11 @@ FONT SIZE SYSTEM (px)
     font-weight: 500;
     display: none;
   }
+
+  .stick{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
